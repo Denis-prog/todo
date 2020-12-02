@@ -1,0 +1,52 @@
+{
+  "data": {
+    "columns": [
+        {
+          "id": 0,
+          "title": "на сегодня"
+        },
+        {
+          "id": 1,
+          "title": "на завтра"
+        }
+      ],
+      "notes": [
+        {
+          "id": 0,
+          "idColumn": 0,
+          "text": "нажраться",
+          "isQuickly": true
+        },
+        {
+          "id": 1,
+          "idColumn": 0,
+          "text": "закусить",
+          "isQuickly": false
+        },
+        {
+          "id": 2,
+          "idColumn": 0,
+          "text": "сдохнуть",
+          "isQuickly": true
+        },
+        {
+          "id": 3,
+          "idColumn": 1,
+          "text": "помолиться",
+          "isQuickly": true
+        },
+        {
+          "id": 4,
+          "idColumn": 1,
+          "text": "передернуть",
+          "isQuickly": false
+        },
+        {
+          "id": 5,
+          "idColumn": 1,
+          "text": "охренеть",
+          "isQuickly": false
+        }
+      ]
+  }
+}

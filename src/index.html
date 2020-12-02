@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Trello clone</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic-ext"
+		rel="stylesheet">
+
 </head>
+
 <body>
-	
+	<div class="error-section" id="error-section">
+		<div class="error-section-inner">
+			<i class="fa fa-exclamation-circle error-icon" aria-hidden="true"></i>
+			Что-то пошло не так. 
+			<span class="error-description" id="error-description"></span>
+		</div>
+	</div>
+	<div class="load" id="spinner">
+		<div class="load-inner">
+			<object class="load-spinner" data="./assets/img/spinner.svg" role="img" type="image/svg+xml"
+				aria-label="adidas brand logo"></object>
+		</div>
+	</div>
+
+	<header class="tools-panel">
+		<button data-action-addColumn class="tools-panel-action" data-action="addNewColumn" tabindex="0">+ Добавить
+			колонку</button>
+	</header>
+	<aside class="sub-tools-panel" id="sub-tools-panel">
+		<div class="sub-tools-panel-box" id="sub-tools-panel-checkbox-option" data-menu="selection">
+			<button class="sub-tools-panel-tab" data-option-checkbox="true" data-action="uncheckAllElement">
+				Снять все отметки
+			</button>
+			<button class="sub-tools-panel-tab" data-option-checkbox="true" data-action="checkAllElement">
+				Выделить все
+			</button>
+			<button class="sub-tools-panel-tab" data-option-checkbox="true" data-action="preliminaryDeleteCheckNote">
+				Удалить выделенное
+			</button>
+			<button class="sub-tools-panel-tab" data-option-checkbox="true" data-action="setQuickly">
+				Пометить как срочное
+			</button>
+			<button class="sub-tools-panel-tab" data-option-checkbox="true" data-action="unsetQuickly">
+				Убрать пометку срочности
+			</button>
+		</div>
+		<div class="sub-tools-panel-box" id="test" data-menu="test">
+			<button class="sub-tools-panel-tab">
+				test1
+			</button>
+			<button class="sub-tools-panel-tab">
+				test2
+			</button>
+			<button class="sub-tools-panel-tab">
+				test3
+			</button>
+		</div>
+	</aside>
+	<main class="container" id="mainBoxElements">
+		<div class="row">
+			<div class="columns" id="columnsBox">
+				<!-- 	<div class="column"  data-column-id="1" tabindex="0">
+					<button data-cansel-btn="true" class="cancel-delete-column">отменить удаление</button>
+					<i class="far fa-times-circle column-close" data-close-column="true" tabindex="0"></i>
+					<p class="column-header" data-column-text data-column-header="true" tabindex="0">В плане</p>
+					<ul data-notes>
+						<li class="note note-quickly" data-note="true" data-note-id="1" tabindex="0">
+							<button data-cansel-btn="true" class="cancel-delete-note">отменить удаление</button>
+							<label class="note-checkbox-label">
+								<input type="checkbox" class="note-checkbox-input" data-type-menu="selection">
+								<span class="note-checkbox-custom"></span>
+							</label>
+							<p class="note-text" data-note-text="true" tabindex="0">
+								Тут какая-та задача о чем-то интересномddd.
+							</p>
+						</li>
+						<li class="note" data-note="true" data-note-id="2" tabindex="0">
+							<button data-cansel-btn="true" class="cancel-delete-note">отменить удаление</button>
+							<label class="note-checkbox-label">
+								<input type="checkbox" class="note-checkbox-input" data-type-menu="selection">
+								<span class="note-checkbox-custom"></span>
+							</label>
+							<p class="note-text" data-note-text="true" tabindex="0">
+								Тут какая-та задача о чем-то интересномddd.
+							</p>
+						</li>
+						<li class="note" data-note="true" data-note-id="3" tabindex="0">
+							<button data-cansel-btn="true" class="cancel-delete-note">отменить удаление</button>
+							<label class="note-checkbox-label">
+								<input type="checkbox" class="note-checkbox-input" data-type-menu="test">
+								<span class="note-checkbox-custom"></span>
+							</label>
+							<p class="note-text" data-note-text="true" tabindex="0">
+								Тут какая-та задача о чем-то интересномddd.
+							</p>
+						</li>
+					</ul>
+					<p class="column-footer">
+						<span data-action-addNote class="action" data-action="addNewNote" tabindex="0">+ Добавить
+							карточку</span>
+					</p>
+				</div> -->
+			</div>
+		</div>
+	</main>
 </body>
+
 </html>
