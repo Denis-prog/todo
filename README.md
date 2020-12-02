@@ -1,3 +1,4 @@
-# Rest-node-for-Todo 
-# учебный Rest Node. БД MongoDB на cloud.mongoDB 
-# старт npm run dev файл test содержит возможные запросы
+# todo list
+###### учебный проект не завершен. работает в связке с rest node todo. Для ознакомления с имеющимся функционалом
+###### необходимо сгенерировать токен в файле test в репозитории сервера и разместить токен в local storage (key token)
+# старт npm run dev
